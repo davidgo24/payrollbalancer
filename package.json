@@ -1,0 +1,9 @@
+{
+  "name": "payroll-balancer",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "dev:api": "uvicorn api.main:app --reload --port 8000",
+    "build": "cd frontend && npm run build"
+  }
+}

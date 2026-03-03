@@ -9,13 +9,22 @@ Pre-validation layer for transit payroll: run before importing TimeClockPlus dat
 
 ## Quick start
 
-**Web app (recommended):**
+**React app (recommended) — one employee at a time, like New World:**
 ```bash
+# Terminal 1: API
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+uvicorn api.main:app --reload --port 8000
+
+# Terminal 2: React frontend
+cd frontend && npm install && npm run dev
+```
+Open http://localhost:5173 → drag & drop files, review one employee at a time, edit inline.
+
+**Streamlit (legacy):**
+```bash
 streamlit run app.py
 ```
-Upload TCP CSV + Accrual Excel, review results, download.
 
 **CLI:**
 ```bash
