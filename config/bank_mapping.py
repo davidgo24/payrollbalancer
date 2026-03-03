@@ -39,6 +39,16 @@ COMP_CODES = {
 # Skip these employees entirely - finance handles
 SKIP_CODES = {"ADMIN LEAVE PAY"}
 
+# All valid hours codes for New World (for UI dropdown)
+HOURS_CODES = [
+    "REG FT", "REG PT", "REG SAL", "GUARANTEE", "OT 1.5", "OT 1.0",
+    "CT EARN 1.5", "CT EARN 1.0", "CT PAY 1.0", "CT SAL PAY", "CT SAL PAY 1.0",
+    "SICK PAY", "FMLA SICK", "AL SICK PAY", "HEALTHY SICK PAY", "VAC PAY", "FMLA VAC",
+    "AL PAY", "FMLA AL", "BEREAVEMENT", "LWOP", "FMLA LWOP",
+    "HOL PAY", "HOL PAYOUT", "HOL 1.5", "HOL 1.0", "ADMIN LEAVE PAY",
+    "NON PROD LUNCH", "RECOVERY 1.5", "JURY DUTY",
+]
+
 # LWOP - used when converting from leave when no balance
 LWOP_CODE = "LWOP"
 
